@@ -44,7 +44,7 @@
                         <li><a href="{{ URL::to('/') }}">Posts</a></li>
                         <li><a href="{{ URL::to('/archives') }}">Archives</a></li>
                         <li><a href="{{ URL::to('/biography') }}">About</a></li>
-                        <li><a href="{{ URL::to('/editTitles') }}">Edit Web Titles</a></li>
+                        <li><a href="{{ URL::to('/editTitles') }}">Edit Titles</a></li>
                         <li><a href="{{ URL::to('/findDonations') }}">Donors</a></li>
                         <li><a href="{{ URL::to('/admin/logout') }}">Logout</a></li>
                         @else
