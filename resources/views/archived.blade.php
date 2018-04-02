@@ -9,21 +9,11 @@ $rightArrow = $lastId;
     <?php
     if (isset($notFound)) $val = $notFound; else $val = '';
     ?>
-    <div class="searchBox">
-        <form method="post" action="{{ URL::to('/search') }}">
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-            <input type="text" name="searchFor" placeholder="  Search by keyword" value="{{ $val }}">
-            <input type="submit" value="Search">
-        </form>
-        @if(isset($notFound) && $notFound != '')
-            <span class="unFound">Keyword not found. Please try again.</span>
-        @endif
-    </div>
     @foreach($posts as $post)
         <div class="archives">
             <div class="titleLink">
                 <?php
-                $created = $post['isPost'] ?  date('F j, Y', strtotime($post['created_at'])). " &#9679; " : '';
+                $created = $post['isPost'] ? date('F j, Y', strtotime($post['created_at'])) . " &#9679; " : '';
                 ?>
                 <a class="shownArrow" href="./changePost?id={{ $post['id'] }}">{{ $created }}{{ $post['title'] }}</a>
             </div>
@@ -38,6 +28,18 @@ $rightArrow = $lastId;
                 ?>...
             </div>
             <div class="clearFix"></div>
+            @if(!$post['isPost'])
+                <div class="searchBox">
+                    <form method="post" action="{{ URL::to('/search') }}">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="text" name="searchFor" placeholder=" Archives by keyword" value="{{ $val }}">
+                        <input type="submit" value="Search">
+                    </form>
+                    @if(isset($notFound) && $notFound != '')
+                        <span class="unFound">Keyword not found. Please try again.</span>
+                    @endif
+                </div>
+            @endif
         </div>
     @endforeach
 @endsection
