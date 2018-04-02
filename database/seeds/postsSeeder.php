@@ -17,14 +17,13 @@ class postsSeeder extends Seeder
             [
                 'title' => 'Charles "Charlie" Le Chat',
                 'isPost' => 0,
-                'content' => "Charles “Charlie” Le Chat is a well-loved and respected member of Our Town. Most residents know Charlie through the outstanding work he has done promoting tourism in our community. Vacationers from around the state and country travel to Our Town just to meet Charlie and have their picture taken with him (festive seasonal bowtie added for a small fee).
+                'content' => "Charles “Charlie” Le Chat is a well-loved and respected member of Our Town. Most residents know Charlie through the outstanding work he has done promoting tourism in our community. Vacationers from around the state and country travel to Our Town not just to see the sights, but to get a photo with Charlie, who is always happy to oblige (festive bowtie added for a small fee).
 
-Charlie is a tireless promoter of our local businesses. Each morning he makes the rounds of Main Street shops, meeting with small-business owners and listening to their concerns. A typical morning might include a bit of chicken or cheese at Tasty Deli, a saucerful of warm milk at Town Market, and a relaxing head scratch at Our Town Auto, followed by a sunbeam siesta and belly rub on the steps of City Hall.
+Charlie is a tireless promoter of our local businesses. Each morning he makes the rounds of Main Street shops, meeting with small-business owners and listening to their concerns. A typical morning might include a bit of chicken at Tasty Deli, a saucerful of warm milk at Town Market, and a relaxing head scratch at Our Town Auto. Working lunches are usually followed by a sunbeam siesta and belly rubs on the steps of City Hall.
 
 After many weeks spent sunning on the City steps, it’s now time for Charlie to move indoors and upstairs to the big office and the Mayor’s chair. From there, he'll ramp up his work promoting our town’s products and services, with the full resources of City Hall behind him. He'll work to improve services to town residents, increase educational resources for our teachers and students, expand beautification efforts in the community, and enforce leash laws within city limits.
 
-Like Our Town, Charlie proves great things come in small packages. Vote Charles Le Chat for Mayor this November. Our future and his nine lives depend on it.
-",
+Like Our Town, Charlie proves great things come in small packages. Vote Charles Le Chat for Mayor this November. Our future and his nine lives depend on it.",
                 'created_at' => "2017-03-25 15:31:44",
                 'updated_at' => "2018-03-25 18:52:25",
                 'path' => "images/samples/toni.jpg"
@@ -53,7 +52,7 @@ And if for you, a car trip means riding shotgun with your head out the window an
                 'path' => "images/samples/skyline.JPG"
             ],
             [
-                'title' => "Bird-Brained or Brilliant? One Solution To The Affordable Housing Crisis
+                'title' => "Bird-Brained or Brilliant? One Solution To The Housing Crisis
 ",
                 'isPost' => 1,
                 'content' => "Like many communities, Our Town has struggled with ways to provide affordable housing for all our residents: humans, pets, and wildlife alike.
@@ -63,7 +62,7 @@ While watching volunteers from Our Town High School erect birdhouses for our del
 Is this idea wise like an owl? Or crazy as a cuckoo? Let me know. I’ll be hosting a meet-greet-and-pet potluck at the Town Library on April 1 at 8:00 p.m. Please contact Head Librarian Rita Book if you plan on attending. Last-minute drop-ins are welcome.
 
 Stop by. Bring a treat. Don’t forget the tuna fish and catnip.",
-                'created_at' => "2017-03-26 15:26:19",
+                'created_at' => "2017-03-28 15:26:19",
                 'updated_at' => "2018-03-25 19:15:24",
                 'path' => "images/samples/birdhouse.JPG"
             ]
